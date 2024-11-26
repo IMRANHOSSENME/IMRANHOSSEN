@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.email-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #dddddd;
+    border-radius: 10px;
+}
+
+.recipient {
+    background-color: #e0f7fa;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+input[type="email"],
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.signature-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.signature-details h2 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.signature-details p,
+.signature-contact p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+.signature-contact p {
+    display: flex;
+    align-items: center;
+}
+
+.signature-contact i {
+    margin-right: 10px;
+    color: #e91e63; /* Pink color for icons */
+}
+
+.social-icons {
+    text-align: center;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    color: #555; /* Default icon color */
+}
+
+.social-icons a:hover {
+    color: #e91e63; /* Pink color on hover */
+}
+
+.create-signature {
+    text-align: center;
+    font-size: 12px;
+    color: #888888;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .signature-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .signature-contact p {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .signature-details h2 {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .signature-details p,
+    .signature-contact p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .social-icons a {
+        margin: 5px;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce Website</title>
+    <link rel="stylesheet" href="css/bill.css">
+</head>
+<body>
+    <header>
+        <h1>eCommerce Website</h1>
+    </header>
+
+    <main>
+        <section id="pay-bill">
+            <h2>Pay Your Bill</h2>
+            <form id="payBillForm">
+                <label for="billAmount">Bill Amount:</label>
+                <input type="number" id="billAmount" name="billAmount" required>
+                
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber" required>
+                
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate" placeholder="MM/YY" required>
+                
+                <label for="cvv">CVV:</label>
+                <input type="password" id="cvv" name="cvv" required>
+                
+                <button type="submit">Pay Now</button>
+            </form>
+        </section>
+
+        <section id="reserve">
+            <h2>Reserve a Product</h2>
+            <form id="reserveForm">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" name="productName" required>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+                
+                <button type="submit">Reserve</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

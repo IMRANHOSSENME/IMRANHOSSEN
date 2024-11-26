@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Receipt Memo</title>
+    <link rel="stylesheet" href="css/Receipt.css">
+</head>
+<body>
+    <div class="receipt">
+        <header>
+            <h1>Payment Receipt</h1>
+            <p>Company Name</p>
+            <p>Company Address</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@company.com</p>
+        </header>
+
+        <section class="details">
+            <div>
+                <p><strong>Date:</strong> <span id="date"></span></p>
+                <p><strong>Receipt No:</strong> <span id="receiptNo"></span></p>
+            </div>
+            <div>
+                <p><strong>Customer Name:</strong> <span id="customerName"></span></p>
+                <p><strong>Payment Method:</strong> <span id="paymentMethod"></span></p>
+            </div>
+        </section>
+
+        <section class="products">
+            <h2>Products Purchased</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody id="productList">
+                    <!-- Product rows will be inserted here by JavaScript -->
+                </tbody>
+            </table>
+        </section>
+
+        <section class="total-amount">
+            <h2>Total Amount: <span id="totalAmount"></span></h2>
+        </section>
+
+        <section class="footer">
+            <p>Thank you for your payment!</p>
+            <button onclick="window.print()">Print Receipt</button>
+        </section>
+    </div>
+
+    <script src="js/Receipt.js"></script>
+</body>
+</html>
